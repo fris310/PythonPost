@@ -1,11 +1,10 @@
 # Swiss Tournament
 
-A smarter tournament system in which players are paired with those of similar skill level and everyone competes in every round. More fair than an elimination bracket and more efficient than a round-robin tournament.
+A tournament application in which players are paired with those of similar skill level and everyone competes in every round. More fair than an elimination bracket and more efficient than a round-robin tournament.
 
 A PostgreSQL database stores match results, and a Python module queries the database to rank and pair players. When two players have the same win record, ties are broken by summing the win record of each player's previous opponents.
 
 ## Requirements
-
 Python >2.7 and <3.0.
 
 psycopg2
@@ -14,15 +13,15 @@ PostgreSQL
 
 Set up
 
-To create the tournament database and tables:
+## To create the tournament database and tables:
 
->>> psql initialize the interactive terminal for PostgreSQL
+** psql command initialize the interactive terminal for PostgreSQL
 
->>> \i tournament.sql execute the contents of tournament.sql to create database, tables, and views
+** \i tournament.sql  command executes the contents of tournament.sql to delete the old database create the new database, tables, and view
 
->>> \q exit Psql interactive
+** \q command or ctrl + D exit Psql interactive
 
-Usage
+## Usage
 
 Start the Python interpreter and import the tournament.py module.
 
@@ -49,16 +48,14 @@ the tournament data. It also finds the specific matches necessary to create a
 swiss-style tournament.
 
  ## Methods defined in this file are listed below:
-
-
-connect()
-deleteMatches()
-deletePlayers()
-countPlayers()
-registerPlayer(name)
-playerStandings()
-reportMatch(winner, loser)
-swissPairings()
+ 1. connect()
+ 2. deleteMatches()
+ 3. deletePlayers()
+ 4. countPlayers()
+ 5. registerPlayer(name)
+ 6  playerStandings()
+ 7. reportMatch(winner, loser)
+ 8. swissPairings()
 
 
 
