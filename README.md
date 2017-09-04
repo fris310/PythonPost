@@ -1,5 +1,4 @@
-# PythonPost
-## Swiss Tournament
+# Swiss Tournament
 
 A smarter tournament system in which players are paired with those of similar skill level and everyone competes in every round. More fair than an elimination bracket and more efficient than a round-robin tournament.
 
