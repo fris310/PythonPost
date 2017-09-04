@@ -3,7 +3,7 @@
 A tournament application in which players are paired with those of similar skill level and everyone competes. The system reports the number and outcome of matches per player. A PostgreSQL database stores match results, and a Python module queries the database to rank and pair players. 
 
 ## Requirements
-Python >2.7 and <3.0.
+Python 2.7 
 
 psycopg2
 
