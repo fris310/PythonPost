@@ -4,7 +4,7 @@ A smarter tournament system in which players are paired with those of similar sk
 
 A PostgreSQL database stores match results, and a Python module queries the database to rank and pair players. When two players have the same win record, ties are broken by summing the win record of each player's previous opponents.
 
-Requirements
+## Requirements
 
 Python >2.7 and <3.0.
 
@@ -26,8 +26,8 @@ Usage
 
 Start the Python interpreter and import the tournament.py module.
 
-tournament.sql
-################################################################################
+## tournament.sql
+
 This file is used to set up the database used to store the players in the 
 tournament as well as the matches each of which occupy their own table.
 
@@ -42,8 +42,7 @@ A view is also created which "highlights" specific columns from the Players
 table, namely the wins in descending order.
 
  
-tournament.py
-################################################################################
+## tournament.py
 This file contains all the methods necessary to get a tournament up and running,
 gather information about the state of the tournament & players, as well as clear
 the tournament data. It also finds the specific matches necessary to create a 
@@ -63,8 +62,7 @@ Further detail about the arguments and return values of above methods can be
 found in tournament.py.
 
 
-tournament_test.py
-################################################################################
+## tournament_test.py
 This file is a test script used to check the functionality of the swiss-style 
 tournament. It clears the tables in the database, populates it with players and 
 games, and is used to simulate a simple tournament.
