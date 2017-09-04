@@ -48,7 +48,9 @@ gather information about the state of the tournament & players, as well as clear
 the tournament data. It also finds the specific matches necessary to create a 
 swiss-style tournament.
 
-Methods defined in this file are listed below:
+ ## Methods defined in this file are listed below:
+
+
 connect()
 deleteMatches()
 deletePlayers()
@@ -58,8 +60,6 @@ playerStandings()
 reportMatch(winner, loser)
 swissPairings()
 
-Further detail about the arguments and return values of above methods can be 
-found in tournament.py.
 
 
 ## tournament_test.py
