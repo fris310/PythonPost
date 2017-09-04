@@ -14,8 +14,8 @@ CREATE TABLE players(
 
 CREATE TABLE matches(
     match_id SERIAL PRIMARY KEY,
-    winner INT DEFAULT 0,
-    loser INT DEFAULT 0
+    winner INT REFERENCES players(id) DEFAULT 0,
+    loser INT REFERENCES players(id) DEFAULT 0
 );
 
 CREATE VIEW wins_view AS SELECT id, name, num_wins, num_matches
