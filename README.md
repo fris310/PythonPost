@@ -1,8 +1,6 @@
 # Swiss Tournament
 
-A tournament application in which players are paired with those of similar skill level and everyone competes in every round. More fair than an elimination bracket and more efficient than a round-robin tournament.
-
-A PostgreSQL database stores match results, and a Python module queries the database to rank and pair players. When two players have the same win record, ties are broken by summing the win record of each player's previous opponents.
+A tournament application in which players are paired with those of similar skill level and everyone competes. The system reports the number and outcome of matches per player. A PostgreSQL database stores match results, and a Python module queries the database to rank and pair players. 
 
 ## Requirements
 Python >2.7 and <3.0.
@@ -66,11 +64,7 @@ games, and is used to simulate a simple tournament.
 
 Specifically, it runs the following self-explanatory methods:
 
-    testDeleteMatches()
-    testDelete()
     testCount()
-    testRegister()
-    testRegisterCountDelete()
     testStandingsBeforeMatches()
     testReportMatches()
     testPairings()
